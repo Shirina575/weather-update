@@ -43,7 +43,7 @@
             fetchingData(cityName);
         })
         function fetchingData(city){
-            fetch("http://api.openweathermap.org/data/2.5/weather?q="+city+"&APPID=f2e252b8e5ba9696820ad44e749231b9")
+            fetch("http://api.openweathermap.org/data/2.5/weather?q="+city+"&APPID={API KEY}")
             .then(response => response.json())
             .then(data => {
                 document.getElementById('city-output').innerText = data['name'];
